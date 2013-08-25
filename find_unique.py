@@ -11,7 +11,7 @@ def main():
     for line in f.readlines():
         for c in line:
             if c.isalpha():
-                if c in charcount:
+                if c in charcount.keys():
                     charcount[c]+=1
                 else:
                     charcount[c]=1
